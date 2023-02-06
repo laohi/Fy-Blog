@@ -451,6 +451,9 @@ INSERT INTO `tb_resource` VALUES (284, '保存或修改说说', '/admin/talks', 
 INSERT INTO `tb_resource` VALUES (285, '删除说说', '/admin/talks', 'DELETE', 278, 0, '2022-01-24 01:31:22', NULL);
 INSERT INTO `tb_resource` VALUES (286, '查看后台说说', '/admin/talks', 'GET', 278, 0, '2022-01-24 01:31:38', NULL);
 INSERT INTO `tb_resource` VALUES (287, '根据id查看后台说说', '/admin/talks/*', 'GET', 278, 0, '2022-01-24 01:31:53', '2022-01-24 01:33:14');
+INSERT INTO `tb_resource` VALUES (288, '导出文章', '/admin/articles/export', 'POST', 168, 0, '2022-07-24 22:08:00', NULL);
+INSERT INTO `tb_resource` VALUES (289, '导入文章', '/admin/articles/import', 'POST', 168, 0, '2022-07-24 22:08:12', NULL);
+INSERT INTO `tb_resource` VALUES (290, '上传博客配置图片', '/admin/config/images', 'POST', 166, 0, '2022-07-24 22:08:15', NULL);
 
 -- ----------------------------
 -- Table structure for tb_role
@@ -487,61 +490,6 @@ CREATE TABLE `tb_role_menu`  (
 -- ----------------------------
 -- Records of tb_role_menu
 -- ----------------------------
-INSERT INTO `tb_role_menu` VALUES (1397, 8, 1);
-INSERT INTO `tb_role_menu` VALUES (1398, 8, 2);
-INSERT INTO `tb_role_menu` VALUES (1399, 8, 6);
-INSERT INTO `tb_role_menu` VALUES (1400, 8, 7);
-INSERT INTO `tb_role_menu` VALUES (1401, 8, 8);
-INSERT INTO `tb_role_menu` VALUES (1402, 8, 9);
-INSERT INTO `tb_role_menu` VALUES (1403, 8, 10);
-INSERT INTO `tb_role_menu` VALUES (1404, 8, 3);
-INSERT INTO `tb_role_menu` VALUES (1405, 8, 11);
-INSERT INTO `tb_role_menu` VALUES (1406, 8, 12);
-INSERT INTO `tb_role_menu` VALUES (1407, 8, 202);
-INSERT INTO `tb_role_menu` VALUES (1408, 8, 13);
-INSERT INTO `tb_role_menu` VALUES (1409, 8, 14);
-INSERT INTO `tb_role_menu` VALUES (1410, 8, 201);
-INSERT INTO `tb_role_menu` VALUES (1411, 8, 4);
-INSERT INTO `tb_role_menu` VALUES (1412, 8, 16);
-INSERT INTO `tb_role_menu` VALUES (1413, 8, 15);
-INSERT INTO `tb_role_menu` VALUES (1414, 8, 17);
-INSERT INTO `tb_role_menu` VALUES (1415, 8, 18);
-INSERT INTO `tb_role_menu` VALUES (1416, 8, 19);
-INSERT INTO `tb_role_menu` VALUES (1417, 8, 20);
-INSERT INTO `tb_role_menu` VALUES (1418, 8, 5);
-INSERT INTO `tb_role_menu` VALUES (1595, 9, 1);
-INSERT INTO `tb_role_menu` VALUES (1596, 9, 2);
-INSERT INTO `tb_role_menu` VALUES (1597, 9, 6);
-INSERT INTO `tb_role_menu` VALUES (1598, 9, 7);
-INSERT INTO `tb_role_menu` VALUES (1599, 9, 8);
-INSERT INTO `tb_role_menu` VALUES (1600, 9, 9);
-INSERT INTO `tb_role_menu` VALUES (1601, 9, 10);
-INSERT INTO `tb_role_menu` VALUES (1602, 9, 3);
-INSERT INTO `tb_role_menu` VALUES (1603, 9, 11);
-INSERT INTO `tb_role_menu` VALUES (1604, 9, 12);
-INSERT INTO `tb_role_menu` VALUES (1605, 9, 202);
-INSERT INTO `tb_role_menu` VALUES (1606, 9, 13);
-INSERT INTO `tb_role_menu` VALUES (1607, 9, 14);
-INSERT INTO `tb_role_menu` VALUES (1608, 9, 201);
-INSERT INTO `tb_role_menu` VALUES (1609, 9, 4);
-INSERT INTO `tb_role_menu` VALUES (1610, 9, 16);
-INSERT INTO `tb_role_menu` VALUES (1611, 9, 15);
-INSERT INTO `tb_role_menu` VALUES (1612, 9, 17);
-INSERT INTO `tb_role_menu` VALUES (1613, 9, 18);
-INSERT INTO `tb_role_menu` VALUES (1614, 9, 19);
-INSERT INTO `tb_role_menu` VALUES (1615, 9, 20);
-INSERT INTO `tb_role_menu` VALUES (1616, 9, 5);
-INSERT INTO `tb_role_menu` VALUES (1639, 13, 2);
-INSERT INTO `tb_role_menu` VALUES (1640, 13, 6);
-INSERT INTO `tb_role_menu` VALUES (1641, 13, 7);
-INSERT INTO `tb_role_menu` VALUES (1642, 13, 8);
-INSERT INTO `tb_role_menu` VALUES (1643, 13, 9);
-INSERT INTO `tb_role_menu` VALUES (1644, 13, 10);
-INSERT INTO `tb_role_menu` VALUES (1645, 13, 3);
-INSERT INTO `tb_role_menu` VALUES (1646, 13, 11);
-INSERT INTO `tb_role_menu` VALUES (1647, 13, 12);
-INSERT INTO `tb_role_menu` VALUES (2366, 14, 1);
-INSERT INTO `tb_role_menu` VALUES (2367, 14, 2);
 INSERT INTO `tb_role_menu` VALUES (2461, 1, 1);
 INSERT INTO `tb_role_menu` VALUES (2462, 1, 2);
 INSERT INTO `tb_role_menu` VALUES (2463, 1, 6);
@@ -623,7 +571,6 @@ CREATE TABLE `tb_role_resource`  (
 -- ----------------------------
 -- Records of tb_role_resource
 -- ----------------------------
-INSERT INTO `tb_role_resource` VALUES (4750, 14, 238);
 INSERT INTO `tb_role_resource` VALUES (4751, 2, 254);
 INSERT INTO `tb_role_resource` VALUES (4752, 2, 267);
 INSERT INTO `tb_role_resource` VALUES (4753, 2, 269);
@@ -759,6 +706,9 @@ INSERT INTO `tb_role_resource` VALUES (4882, 3, 210);
 INSERT INTO `tb_role_resource` VALUES (4883, 3, 282);
 INSERT INTO `tb_role_resource` VALUES (4884, 3, 286);
 INSERT INTO `tb_role_resource` VALUES (4885, 3, 287);
+INSERT INTO `tb_role_resource` VALUES (4886, 1, 288);
+INSERT INTO `tb_role_resource` VALUES (4887, 1, 289);
+INSERT INTO `tb_role_resource` VALUES (4888, 1, 290);
 
 -- ----------------------------
 -- Table structure for tb_tag
@@ -875,7 +825,6 @@ CREATE TABLE `tb_user_role`  (
 -- Records of tb_user_role
 -- ----------------------------
 INSERT INTO `tb_user_role` VALUES (1001, 1, 1);
-INSERT INTO `tb_user_role` VALUES (1002, 1005, 2);
 
 -- ----------------------------
 -- Table structure for tb_website_config
