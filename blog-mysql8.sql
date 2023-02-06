@@ -808,7 +808,7 @@ CREATE TABLE `tb_user_info`  (
 -- ----------------------------
 -- Records of tb_user_info
 -- ----------------------------
-INSERT INTO `tb_user_info` VALUES (1, 'admin@qq.com', '管理员', 'https://static.talkxj.com/avatar/user.png', 'admin@qq.com', NULL, 0, '2021-08-12 15:43:17', '2021-08-12 15:51:42');
+INSERT INTO `tb_user_info` VALUES (1, '', '管理员', 'https://static.talkxj.com/avatar/user.png', '', NULL, 0, '2021-08-12 15:43:17', '2021-08-12 15:51:42');
 
 -- ----------------------------
 -- Table structure for tb_user_role
